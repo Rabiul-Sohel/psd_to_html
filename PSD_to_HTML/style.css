@@ -1,0 +1,656 @@
+/*===============================================================
+common css
+==================================================================*/
+body{
+   color:#66666666 ;
+   font-family: Georgia, sans-serif;
+   font-size: 16px;
+   line-height: 1.5em;
+   margin: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width:100%;
+    height: auto;
+}
+.align_left{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.align_right{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.align_right{
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+
+
+
+
+
+/*===============================================================
+Top Header css
+==================================================================*/
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    background: #BA2E1F;
+    padding: 15px 0;
+    width: 100%;
+}
+.inner_top_header{
+    overflow: hidden;
+
+}
+.mini_menu{
+    padding-top: 5px;
+    float: left;
+    width: 70%
+  
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+
+}
+.mini_menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+.mini_menu ul li::after{
+    background: #fff;
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -10px;
+    height: 12px;
+    width: 1px;
+}
+.mini_menu ul li:last-child:after{
+    display: none;
+}
+.mini_menu ul li a{
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+}
+.mini_menu ul li a:hover{
+    color: #ddd;
+}
+.search_area{
+    float: right;
+    width: 30%;
+}
+.search_area form{
+    background-color: #fff;
+    border-radius: 25px;
+    float: right;
+    max-width: 210px;
+    padding: 2%;
+    width: 96%;
+}
+.search_area input{
+   border: 0 solid;
+   width: 75%;
+   padding: 1%;
+   float: left;
+   color: #000;
+}
+
+/* .search_area input{
+   border: 0 solid;
+   width: 75%;
+   padding: 1%;
+   float: left;
+   color: #000;
+} */
+.search_area input[type="submit"]{
+    background: #fff;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+   width: 23%;
+   cursor: pointer;
+   
+}
+.search_area input[type="submit"]:hover{
+    background-image: url(img/search.png);
+    background-size: 40%;
+   
+   
+}
+
+
+/*===============================================================
+Main Header css
+==================================================================*/
+
+#main_header_area{
+    width: 100%;
+    clear: both;
+}
+.inner_header{
+    padding: 40px 0;
+    overflow: hidden;
+}
+.logo_area{
+    float: left;
+    max-width: 250px;
+    width: 40%; 
+}
+.social_area{
+    padding-top: 20px;
+    float: right;
+    max-width: 600px;
+    width: 60%;
+ 
+}
+.social_area ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-align: right;
+}
+.social_area ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.social_area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_area ul li a i{
+    color: #fff;
+    background: #333333;
+    border-radius: 50%;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    padding-top: 8px;
+    height: 25px;
+    text-align: center;
+    transition: 0.25s;
+}
+.social_area ul li a:hover i{
+    background: #ba2e1f;
+}
+.social_area ul li a:hover i.fa-linkedin-in{
+    background: #2980b9;
+}
+.social_area ul li a:hover i.fa-twitter{
+    background: #3498db;
+}
+.social_area ul li a:hover i.fa-pinterest{
+    background: #e74c3c;
+}
+.social_area ul li a:hover i.fa-google-plus-g{
+    background: #c0392b;
+}
+.social_area ul li a:hover i.fa-rss{
+    background: #d35400;
+}
+
+
+/*===============================================================
+Main Menu css
+==================================================================*/
+#main_menu{
+    width: 100%;
+    clear: both;
+}
+.inner_menu{
+    background: #333333;
+    position: relative;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    min-height: 30px;
+    padding: 15px 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+.inner_menu::after{
+    background: #2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+#main_menu ul{
+   margin: 0;
+   padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+#main_menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px;
+    
+}
+
+#main_menu ul li a:hover{
+    color: #fff;
+    /* background: #ba2e1f; */
+}
+#main_menu ul li:hover a{
+    color: #ba2e1f;
+    
+}
+#main_menu ul li:hover ul a{
+    color: #f8e4e2;
+    
+}
+
+
+
+
+
+/* Dropdown Style */
+ 
+#main_menu ul ul{
+   background: #ba2e1f;
+   position: absolute;
+   width: 180px;
+   left: -999999px;
+   
+}
+#main_menu ul li:hover ul{
+   background: #ba2e1f;
+   position: absolute;
+   width: 180px;
+   left: 0;
+   
+}
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+#main_menu ul ul li a:hover{
+   background: #333333;
+   color: #fff;
+}
+
+#main_menu ul ul ul{
+
+    left: -99999px;
+}
+#main_menu ul li:hover ul ul{
+    left: -999999px;
+}
+#main_menu ul ul li:hover ul{
+    left: 180px;
+    top: 0;
+}
+#main_menu ul ul ul li:hover ul li{
+    background: #2980b9;
+}
+#main_menu ul ul li:hover a{
+    background: #333333;
+    color: #ddd;
+}
+#main_menu ul ul li:hover ul li a{
+    background: #ba2e1f;
+    color: #ddd;
+}
+#main_menu ul ul li ul li a:hover{
+    background: #333333;
+    color: #ddd;
+}
+/* slider css */
+#slider_area{
+    margin-top: 20px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider_caption h1{
+    color: #fff;
+    font-size: 35px;
+}
+  
+
+/*==================== 
+    Hero area css
+=========================== */
+#hero_area{
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.inner_hero{
+    overflow: hidden;
+}
+.inner_hero h2{
+    color: #000000;
+    font-size: 86px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.inner_hero p{
+    color: #66666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inner_hero a{
+    float: right;
+    color: #ba2e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.inner_hero a:hover{
+    color: #000000;
+}
+
+/* ========================
+Work Area css
+==========================*/
+
+
+#work_area{
+    background: #f2f2f2;
+    padding: 45px 0;
+}
+.inner_work{
+    overflow: hidden;
+}
+.child_work{
+    width: 32%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child_work h2{
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+}
+.child_work p{
+    color: #878787;
+    font-size: 14px;
+    font-weight: normal;
+}
+.child_work a{
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    float: right;
+    display: inline-block;
+}
+.child_work a:hover{
+    color: #000000;
+  
+}
+.about_area{
+    margin-left: 0;
+}
+.about_area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+.service_area{}
+.child_service{
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.child_service .service_image{
+    width: 25%;
+   float: left;
+}
+.child_service .service_text{
+    width: 75%;
+   float: right;
+}
+.child_service .service_text h3{
+   font-size: 14px;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+.child_service .service_text p{
+   margin-top: 0;
+   line-height: 1.5em;
+}
+.testimonial_area{
+    margin-right: 0;
+    margin-top: 0;
+}
+.child_testimonial{
+    width: 100%;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+.child_testimonial h3{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+   color: #989898;
+   font-size: 16px;
+   font-weight: bold;
+   padding: 15px 0px 10px 65px;
+}
+.child_testimonial h3 span{
+   font-weight: normal;
+}
+.child_testimonial p{
+   line-height: 1.3em;
+}
+
+/* ==========================
+Footer CSS
+============================== */
+#footer_area{
+    background: #FFFFFF;
+    padding: 45px 0 20px;
+}
+.inner_footer{
+    overflow: hidden;
+}
+.child_footer{
+    padding: 1%;
+    margin: 0 1% 10px;
+    width: 21%;
+    float: left;
+}
+.child_footer h3{
+    border-top: 2px solid #66666666;
+    color: #666666;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 5px;
+}
+.child_footer ul{
+    list-style-type: none;
+    margin-top: 15px;
+    padding-left: 0;
+}
+.child_footer ul li{
+    background-image: url(img/next.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: none;
+    border-bottom: 1px solid #666666;
+}
+.child_footer ul li a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.child_footer ul li a:hover{
+    color: #b92d1f;
+
+}
+.child_blog{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+}
+.child_footer h4{
+        color: #666666;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
+}
+.child_blog h6{
+    color: #666666;
+    font-size: 12px;
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 15px;
+}
+.child_blog h6 a{
+    color: #b92d1f;
+    float: none;
+}
+.child_blog p{
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.3em;
+   
+}
+.child_blog a{
+    color: #b92d1f;
+    float: right;
+    text-decoration: none;
+   
+}
+.child_blog a:hover{
+    color: #000000;  
+}
+.child_footer p{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 0;
+}
+.child_footer input{
+    width: 100%;
+    background: #F2F2F2;
+    border: 0px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+.child_footer input[type="submit"]{
+    background: #F2F2F2;
+    color: #b92d1f;
+    text-transform: uppercase;
+    border: 0px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    float: left;
+    display: block;
+    width: 80px;
+    text-align: center;
+}
+.child_footer input[type="submit"]:hover{
+    background: #b92d1f;
+    color: #FFFFFF;
+}
+.child_footer textarea{
+    font-size: 15px;
+    width: 100%;
+    height: 100px;
+    background: #F2F2F2;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.child_footer p a{
+    color: #b92d1f;
+    text-decoration: none;
+}
+.child_footer p a:hover{
+    color: #000000;
+}
+
+/* ====================
+    copyright CSS
+=======================*/
+
+#copyright_area{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #F2F2F2;
+    height: 65px;
+}
+.inner_copyright{
+    width: 100%;
+}
+.left_copyright{
+   margin-left: 0;
+   padding-left: 0;
+   float: left;
+}
+.left_copyright p{
+    font-size: 14px;
+    color: #919191;
+}
+.right_copyright{
+    margin-right: 0;
+    padding-right: 0;
+    float: right;
+    text-align: right;
+}
+.right_copyright p{
+    font-size: 14px;
+    color: #919191;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
